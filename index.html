@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>login website</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="wrapper">
+        <nav class="nav">
+            <div class="nav-logo">
+                <p>CloudOwl</p>
+            </div>
+            <div class="nav-menu" id="navmenu">
+                <ul>
+                    <li><a href="#" class="link active" style="color: #fff;">HOME</a></li>
+                    <li><a href="#" class="link" style="color: #fff;">CONTACT</a></li>
+                    <li><a href="#" class="link" style="color: #fff;">HELP</a></li>
+                    <li><a href="#" class="link" style="color: #fff;">ABOUT</a></li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button class="btn white-btn" id="login-btn" onclick="login()">Sign In</button>
+                <button class="btn" id="register-btn" onclick="register()">sign up</button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="bx bx-menu" onclick="mymenufunction()"></i>
+            </div>
+        </nav>
+        <!----------- Form box ----------->
+        <div class="form-box">
+
+           <!------- Login form ---->
+
+    <div class="login-container" id="login">
+        <div class="top">
+            <span>Don't have an account?<a href="#" onclick="register()">Sing up</a></span>
+            <header>Login</header>
+        </div>
+         <div class="input-box">
+                <input type="text" class="input-field" placeholder="username or Email" >
+                <i class="bx bx-user"></i>
+        </div>
+         <div class="input-box">
+                <input type="password" class="input-field" placeholder="Password">
+                <i class="bx bx-lock-alt"></i>
+         </div>
+          <div class="input-box">
+                <input type="submit" class="submit" value="Sign In">
+        </div>
+        <div class="two-col">
+            <div class="one">
+                <input type="checkbox" id="login-check">
+                <label for="login-check">Remember Me</label>
+            </div>
+            <div class="two">
+                <label><a href="#">|Forgot password?</a></label>
+            </div>
+        </div>
+</div>
+             <!----- Registration form ------------ >
+    <div class="register-container" id="register">
+        <div class="top">
+            <span>Have an account?<a href="#" onclick="login()">:Login</a></span>
+            <header>sign up</header>
+        </div>
+                 <div class="two-forms">
+                  <div class="input-box">
+                <input type="text" class="input-field" placeholder="firstname">
+                <i class="bx bx-user"></i>
+        </div>
+                 <div class="two-forms">
+                <input type="text" class="input-field" placeholder="lastname">
+                <i class="bx bx-user"></i>
+        </div>
+            </div>
+         <div class="input-box">
+                <input type="text" class="input-field" placeholder="Email">
+                <i class="bx bx-envelope"></i>
+        </div>
+         <div class="input-box">
+                <input type="password" class="input-field" placeholder="Password">
+                <i class="bx bx-lock-alt"></i>
+         </div>
+          <div class="input-box">
+                <input type="submit" class="submit" value="register">
+        </div>
+        <div class="two-col">
+            <div class="one">
+                <input type="checkbox" id="register-check">
+                <label for="register-check">Remember Me</label>
+            </div>
+            <div class="two">
+                <label><a href="#">Tems & conditions</a></label>
+            </div>
+            </div>
+        </div>
+    </div>
+     </div>
+    </body>
+        <script src="/java.js">
+</script>  
+</html>
+
+    
